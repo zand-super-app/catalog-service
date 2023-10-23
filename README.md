@@ -5,6 +5,7 @@
 - [Catalog Microservice](#catalog-microservice)
   - [Table of contents](#table-of-contents)
   - [Purpose](#purpose)
+    - [Sample Metadata](#sample-metadata)
   - [Technology Stack](#technology-stack)
   - [Development Setup](#development-setup)
   - [Setting up the code](#setting-up-the-code)
@@ -20,6 +21,31 @@
 ## Purpose
 
 This Microservice provides REST APIs for the various meta data for micro-frontends and the external apps.
+
+### Sample Metadata
+
+```json
+{
+  "ios": {
+    "0.0.1": {
+      "auth": "https://demo-super-app-container.s3.me-central-1.amazonaws.com/auth-bundle-ios@0.0.1/[name][ext]",
+      "creditcards": "https://demo-super-app-container.s3.me-central-1.amazonaws.com/credit-card-onboarding-ios@0.0.1/[name][ext]",
+      "settings": "http://localhost:9002/[name][ext]",
+      "cryptopwa": "https://zand-pwa.web.app/",
+      "binanceweb": "https://www.binance.com/en/nft/home"
+    }
+  },
+  "android": {
+    "0.0.1": {
+      "auth": "https://demo-super-app-container.s3.me-central-1.amazonaws.com/auth-bundle-android@0.0.1/[name][ext]",
+      "creditcards": "https://demo-super-app-container.s3.me-central-1.amazonaws.com/credit-card-onboarding-android@0.0.1/[name][ext]",
+      "settings": "http://localhost:9002/[name][ext]",
+      "cryptopwa": "https://zand-pwa.web.app/",
+      "binanceweb": "https://www.binance.com/en/nft/home"
+    }
+  }
+}
+```
 
 ## Technology Stack
 
